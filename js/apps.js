@@ -1,15 +1,9 @@
 // ストアの URL ができたら、stores の href に貼る。
 // 空のままだとバナーは出るが、リンクにはならない。
-// iPhone / iPad だけのアプリは App Store だけ。
-// Android もあるアプリは Google Play も足す。
 const BADGES = {
   "app-store": {
     src: "images/badges/app-store.svg",
     alt: "App Storeからダウンロード",
-  },
-  "google-play": {
-    src: "images/badges/google-play.png",
-    alt: "Google Playで手に入れよう",
   },
 };
 
@@ -18,8 +12,7 @@ const APPS = [
     id: "oto",
     name: "絶対音感おとあて",
     summary: "和音を聴いて旗の色を当てる、絶対音感の練習アプリです。",
-    platforms: ["iPhone", "iPad"],
-    icon: "images/otoate/icon.svg",
+    icon: "images/otoate/icon.jpg",
     page: "otoate/",
     stores: [{ kind: "app-store", href: "" }],
   },
@@ -27,7 +20,6 @@ const APPS = [
     id: "drip",
     name: "DripRecipe",
     summary: "ハンドドリップのレシピを、端末の中に残すメモです。",
-    platforms: ["iPhone", "iPad"],
     icon: "images/driprecipe/icon.png",
     page: "driprecipe/",
     stores: [{ kind: "app-store", href: "" }],
@@ -36,13 +28,9 @@ const APPS = [
     id: "kintai",
     name: "勤怠メモ",
     summary: "出勤と休憩を端末の中だけにメモして、月末に転記するための控えです。",
-    platforms: ["iPhone", "Android"],
-    icon: "images/kintai/icon.svg",
+    icon: "images/kintai/icon.png",
     page: "kintai/",
-    stores: [
-      { kind: "app-store", href: "" },
-      { kind: "google-play", href: "" },
-    ],
+    stores: [{ kind: "app-store", href: "" }],
   },
 ];
 
@@ -70,7 +58,6 @@ function renderAppGrid(root) {
       <img class="app-icon" src="${esc(app.icon)}" alt="" width="56" height="56" />
       <div class="app-card-body">
         <h2>${esc(app.name)}</h2>
-        <p class="platforms">${esc(app.platforms.join(" · "))}</p>
         <p>${esc(app.summary)}</p>
         <div class="store-badges">${stores}</div>
         <p class="app-jumps">${jumps}</p>

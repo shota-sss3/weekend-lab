@@ -8,8 +8,7 @@
 
 各アプリのカードにあるバナーは、`js/apps.js` の `stores` でリンクを付けます。`href` が空のあいだは、バナーは見えますがクリックしても飛びません。
 
-- 絶対音感おとあて、DripRecipe は App Store だけ
-- 勤怠メモは App Store と Google Play
+- いま出しているバナーは App Store だけ
 
 公開されたら、次のように URL を入れます。
 

@@ -207,6 +207,11 @@ h3 {
   color: #3d4b5e;
 }
 
+.site-note {
+  margin: 18px 0 0;
+  font-weight: 700;
+}
+
 .hero-foot {
   display: flex;
   flex-wrap: wrap;
@@ -478,7 +483,6 @@ a.store-badge:hover {
   line-height: 1.4;
 }
 
-.app-card .platforms,
 .support-card .work-no {
   margin: 4px 0 0;
   font-size: 13px;
@@ -486,7 +490,7 @@ a.store-badge:hover {
   color: var(--app);
 }
 
-.app-card-body > p:not(.platforms):not(.app-jumps) {
+.app-card-body > p:not(.app-jumps) {
   margin: 10px 0 0;
   color: var(--muted);
   font-size: 14px;
