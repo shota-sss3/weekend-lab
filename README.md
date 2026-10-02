@@ -1,6 +1,6 @@
 # 週末ラボ — サポートサイト
 
-絶対音感おとあて（OtoAte）、DripRecipe、勤怠メモの紹介と規約を、`index.html` 1枚にまとめた静的サイトです。サーバプログラムはありません。ホスティングの無料枠で公開できます。
+絶対音感おとあて（OtoAte）、DripRecipe、勤怠メモの紹介とプライバシーポリシーを載せた静的サイトです。サーバプログラムはありません。ホスティングの無料枠で公開できます。
 
 サイト上にメールアドレスは載せていません。
 
@@ -19,24 +19,24 @@ stores: [{ kind: "app-store", href: "https://apps.apple.com/..." }],
 ## アプリを足す
 
 1. `js/apps.js` の `APPS` に名前、説明、対応ストア、画像パスを追加する
-2. アプリ用フォルダに、プライバシーポリシーと利用規約を1枚にまとめた `index.html` を置く
+2. アプリ用フォルダに、プライバシーポリシーの `index.html` を置く
 3. `images/<id>/icon.svg` を、本物のアイコンに差し替える
 
 ## ページ
 
-トップは紹介だけです。プライバシーポリシーと利用規約は、アプリごとに1枚のページです。
+トップは紹介だけです。プライバシーポリシーは、アプリごとに1枚のページです。
 
 | 用途 | 場所 |
 | --- | --- |
 | 作品一覧 | `/` |
 | このサイトの扱い | `/privacy.html` |
-| おとあて | `/otoate/`（`#privacy` と `#terms`） |
-| DripRecipe | `/driprecipe/`（`#privacy` と `#terms`） |
-| 勤怠メモ | `/kintai/`（`#privacy` と `#terms`） |
+| おとあて | `/otoate/#privacy` |
+| DripRecipe | `/driprecipe/#privacy` |
+| 勤怠メモ | `/kintai/#privacy` |
 
-`/otoate/privacy.html` や `/otoate/terms.html` のような以前のアドレスは、同じアプリのページの該当箇所へ移します。`/driprecipe/tokushoho.html` は DripRecipe の利用規約へ移します。
+`/otoate/privacy.html` や `/otoate/terms.html` のような以前のアドレスは、同じアプリのプライバシーポリシーへ移します。`/driprecipe/tokushoho.html` も同様です。
 
-App Store Connect のプライバシーポリシー URL には `/otoate/#privacy`、または `/otoate/privacy.html` を指定できます。DripRecipe はアプリ内課金をせず、広告を表示する無料アプリです。公開名は週末ラボです。規約はアプリの方針に合わせて書いていますが、法的助言ではありません。広告の配信事業者が決まったら、DripRecipe のプライバシーポリシーにその名前を追記してください。
+App Store Connect のプライバシーポリシー URL には `/otoate/#privacy`、または `/otoate/privacy.html` を指定できます。DripRecipe はアプリ内課金をせず、広告を表示する無料アプリです。公開名は週末ラボです。プライバシーポリシーはアプリの方針に合わせて書いていますが、法的助言ではありません。
 
 ## 無料で公開する
 

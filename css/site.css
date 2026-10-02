@@ -212,6 +212,15 @@ h3 {
   font-weight: 700;
 }
 
+.contact-line {
+  margin: 14px 0 0;
+}
+
+.contact-line a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .hero-foot {
   display: flex;
   flex-wrap: wrap;

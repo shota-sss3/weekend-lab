@@ -53,7 +53,7 @@ function storeBadge(store) {
 function renderAppGrid(root) {
   root.innerHTML = APPS.map((app) => {
     const stores = (app.stores || []).map(storeBadge).join("");
-    const jumps = `<a href="${esc(app.page)}">利用規約・プライバシーポリシー</a>`;
+    const jumps = `<a href="${esc(app.page)}">プライバシーポリシー</a>`;
     return `<article class="app-card" id="${esc(app.id)}">
       <img class="app-icon" src="${esc(app.icon)}" alt="" width="56" height="56" />
       <div class="app-card-body">
