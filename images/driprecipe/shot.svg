@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 700">
+  <rect width="390" height="700" fill="#F3FFFD"/>
+  <rect x="28" y="36" width="334" height="628" rx="28" fill="#fff"/>
+  <text x="195" y="250" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#243044">DripRecipe</text>
+  <text x="195" y="304" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="700" fill="#0E8F8A">スクリーンショット</text>
+  <text x="195" y="344" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#5C6B7E">あとで画像に差し替え</text>
+  <rect x="70" y="410" width="250" height="56" rx="16" fill="#0E8F8A"/>
+</svg>
