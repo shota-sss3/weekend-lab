@@ -17,7 +17,7 @@ const APPS = [
   },
   {
     id: "kintai",
-    name: "勤怠メモ",
+    name: "勤怠メモ ウィジェット",
     summary: "出勤と休憩を端末の中だけにメモして、月末に転記するための控えです。",
     icon: "images/kintai/icon.png",
     page: "kintai/",
@@ -25,7 +25,7 @@ const APPS = [
   },
   {
     id: "oto",
-    name: "絶対音感おとあて",
+    name: "おとあて - 絶対音感の色旗練習",
     summary: "和音を聴いて旗の色を当てる、絶対音感の練習アプリです。",
     icon: "images/otoate/icon.jpg",
     page: "otoate/",
