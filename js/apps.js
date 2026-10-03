@@ -1,5 +1,4 @@
-// ストアの URL ができたら、stores の href に貼る。
-// 空のままだとバナーは出るが、リンクにはならない。
+// ストアに並んだら、stores に { kind: "app-store", href: "URL" } を足す。
 const BADGES = {
   "app-store": {
     src: "images/badges/app-store.svg",
@@ -14,7 +13,7 @@ const APPS = [
     summary: "ハンドドリップのレシピを、端末の中に残すメモです。",
     icon: "images/driprecipe/icon.png",
     page: "driprecipe/",
-    stores: [{ kind: "app-store", href: "" }],
+    stores: [],
   },
   {
     id: "kintai",
@@ -22,7 +21,7 @@ const APPS = [
     summary: "出勤と休憩を端末の中だけにメモして、月末に転記するための控えです。",
     icon: "images/kintai/icon.png",
     page: "kintai/",
-    stores: [{ kind: "app-store", href: "" }],
+    stores: [],
   },
   {
     id: "oto",
@@ -30,7 +29,7 @@ const APPS = [
     summary: "和音を聴いて旗の色を当てる、絶対音感の練習アプリです。",
     icon: "images/otoate/icon.jpg",
     page: "otoate/",
-    stores: [{ kind: "app-store", href: "" }],
+    stores: [],
   },
 ];
 
@@ -53,13 +52,14 @@ function storeBadge(store) {
 function renderAppGrid(root) {
   root.innerHTML = APPS.map((app) => {
     const stores = (app.stores || []).map(storeBadge).join("");
+    const storeBlock = stores ? `<div class="store-badges">${stores}</div>` : "";
     const jumps = `<a href="${esc(app.page)}">プライバシーポリシー</a>`;
     return `<article class="app-card" id="${esc(app.id)}">
       <img class="app-icon" src="${esc(app.icon)}" alt="" width="56" height="56" />
       <div class="app-card-body">
         <h2>${esc(app.name)}</h2>
         <p>${esc(app.summary)}</p>
-        <div class="store-badges">${stores}</div>
+        ${storeBlock}
         <p class="app-jumps">${jumps}</p>
       </div>
     </article>`;
