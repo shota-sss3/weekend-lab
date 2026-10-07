@@ -1,4 +1,4 @@
-// ストアに並んだら、stores に { kind: "app-store", href: "URL" } を足す。
+// ストアの URL は stores の href に書く。
 const BADGES = {
   "app-store": {
     src: "images/badges/app-store.svg",
@@ -13,7 +13,7 @@ const APPS = [
     summary: "ハンドドリップのレシピを、端末の中に残すメモです。",
     icon: "images/driprecipe/icon.png",
     page: "driprecipe/",
-    stores: [],
+    stores: [{ kind: "app-store", href: "https://apps.apple.com/jp/app/driprecipe/id6747379349" }],
   },
   {
     id: "kintai",
@@ -21,7 +21,7 @@ const APPS = [
     summary: "出勤と休憩を端末の中だけにメモして、月末に転記するための控えです。",
     icon: "images/kintai/icon.png",
     page: "kintai/",
-    stores: [],
+    stores: [{ kind: "app-store", href: "https://apps.apple.com/jp/app/%E5%8B%A4%E6%80%A0%E3%83%A1%E3%83%A2-%E3%82%A6%E3%82%A3%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/id6818612597" }],
   },
   {
     id: "oto",
@@ -29,7 +29,7 @@ const APPS = [
     summary: "和音を聴いて旗の色を当てる、絶対音感の練習アプリです。",
     icon: "images/otoate/icon.jpg",
     page: "otoate/",
-    stores: [],
+    stores: [{ kind: "app-store", href: "https://apps.apple.com/jp/app/%E3%81%8A%E3%81%A8%E3%81%82%E3%81%A6-%E7%B5%B6%E5%AF%BE%E9%9F%B3%E6%84%9F%E3%81%AE%E8%89%B2%E6%97%97%E7%B7%B4%E7%BF%92/id6818866951" }],
   },
 ];
 
